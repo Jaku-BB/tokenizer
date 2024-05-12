@@ -36,7 +36,7 @@ class Tokenizer:
                     append_text(temporary_text, result, character)
                     temporary_text = ''
 
-            if character == delimiter or (punctuation_as_item and character in self.punctuation_list + self.punctuation_list_at_end):
+            if character == delimiter or (punctuation_as_item and character in self.punctuation_list):
                 append_text(temporary_text, result, character)
                 temporary_text = ''
 
